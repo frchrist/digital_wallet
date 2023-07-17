@@ -25,12 +25,12 @@ class BalanceScreen extends StatelessWidget {
             child: SingleChildScrollView(
               child: Column(
                 children: [
-                Text(
+                const Text(
                   "Your Balance",
                   style: kMainTextStyle,
                 ),
-                SizedBox(height: 10,),
-                Text(
+                const SizedBox(height: 20,),
+                const Text(
                   "FCFA 22 000",
                   style: TextStyle(
                       color: kTextDark,
@@ -38,10 +38,10 @@ class BalanceScreen extends StatelessWidget {
                       fontWeight: FontWeight.w400,
                       fontSize: 36),
                 ),
-                SizedBox(height: 15,),
+                const SizedBox(height: 20,),
                 
-                AppTransactionRoundedCategory(),
-                SizedBox(height: 20,),
+                const AppTransactionRoundedCategory(),
+                const SizedBox(height: 40,),
 
                 AppTransactionSection(),
                 

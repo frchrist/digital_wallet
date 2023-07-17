@@ -18,18 +18,18 @@ class MenuScreen extends StatelessWidget {
             children: [
               IconButton(onPressed: () {
                 Navigator.pop(context);
-              }, icon: Icon(Icons.arrow_back)),
-              SizedBox(
+              }, icon: const Icon(Icons.arrow_back)),
+              const SizedBox(
                 width: 80,
               ),
-              Text(
+              const Text(
                 "Menu",
                 style: TextStyle(fontSize: 16),
               )
             ],
           ),
           const SizedBox(
-            height: 10,
+            height: 20,
           ),
           Stack(
             children: [
@@ -65,7 +65,7 @@ class MenuScreen extends StatelessWidget {
                 const Text("Shortcuts"),
                 TextButton(
                   onPressed: () {},
-                  child: Text("Customize"),
+                  child: const Text("Customize"),
                 )
               ],
             ),
@@ -79,8 +79,8 @@ class MenuScreen extends StatelessWidget {
               child: Expanded(child: AppMenuShortcuts(shortcuts: shortcuts,)),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 20),
+          const Padding(
+            padding:  EdgeInsets.symmetric(horizontal: 20),
             child: Row(children: [Text("Others", textAlign: TextAlign.start,),],),
           ),
           Container(
